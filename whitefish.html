@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitefish</title>
+    <script>
+        function compareEmails() {
+    // Get the email addresses from the form
+    let email = document.getElementById('email').value;
+    let confirmEmail = document.getElementById('confirmEmail').value;
+
+    // Compare the email addresses
+    if (email === confirmEmail) {
+        // Emails match!
+        alert('Emails match!');
+    } else {
+        // Emails do not match, wich prevents form submission and an alert will show 
+        alert('Emails do not match!');
+        return false; // Prevent form submission
+    }
+}
+    </script>
+    <link rel="icon" type="image/mtfavicon" href="/images/mtfavicon.jpg">
+    <link rel="stylesheet" href="styleswhitefish.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1> Whitefish</h1>
+    </header>
+
+
+    <!-- Navigation Bar -->
+    <nav id="nav">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="capital.html">Capital</a></li>
+            <li><a href="whitefish.html">Whitefish</a></li>
+            <li><a href="bigfork.html">Bigfork</a></li>
+        </ul>
+    </nav>
+
+    <!--Main Content-->
+    <section class="intro">
+        <h1><strong><u>The City of Whitefish, MT<br>AKA: Stumptown</u></strong></h1>
+        <p>Now mainly known for its ski resort and lake life (among many other activities), Whitefish was established in 1905
+            after the infamous Great Northern Railway found its home here.</p>
+        <p>The town is located on the western side of the continental divide, near Glacier National Park.</p>
+        <p>As of 2023, Whitefish has a population on 9,943 and is growing at a rate of 8.21%. The average income per household in Whitefish is $111,754, making it quite a desireable thus expensive place to live.</p>
+        <p>Living in Whitefish offers a sparse suburban feel, and is one of the best places to live in Montana</p>
+    </section>
+    
+    <!--Aside-->
+    <aside>
+        <img src="images/grizzly.jpg" alt="grrrr" width="100" height="100">
+        <p><a href="https://fwp.mt.gov/bear-aware">Be Bear Aware!</a></p>
+    </aside>
+
+    <!-- Form Section -->
+    <div class="form">
+        <caption class="caption"><strong>Travelling to Whitefish? Fill out this form with any questions you may have prior to travel!</strong></caption>
+        <form onsubmit="return compareEmails();">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="confirmEmail">Confirm Email:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm your email address" required>
+
+            <label for="question">Ask a Question:</label>
+            <textarea id="question" name="question" rows="4" placeholder="Type your question here"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+    <!--Train Animation (for funsies)-->
+
+    <div class="train-container">
+        <img src="/images/gnrtrain.webp" alt="Train" class="train">
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <footer>
+            <cite>
+                &copy; Kaylee Mehlhorn's website about Montana 2023
+            </cite>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

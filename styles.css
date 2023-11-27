@@ -1,0 +1,128 @@
+/* CSS styling for Task 2 project */
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    background-color: goldenrod;
+}
+
+.header {
+        height: 12vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px; 
+        background-color: darkblue;
+        position: static;
+    }
+
+
+
+
+nav {
+    background-color: rgb(49, 202, 49);
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* main content style */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+section h3 {
+    color: #333;
+    text-align: center;
+}
+
+/*Famous Landmarks list style */
+.landmarks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.landmarks li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.landmarks li::before {
+    content: '\2022';
+    color: #333;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#montana {
+    float: right;
+}
+
+/* aside section */
+aside {
+    width: 30%;
+    float: left;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+aside h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* nav color changers*/
+.navbar a:hover {
+    background-color: goldenrod;
+    color: teal;
+}
+
+footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        width: 100%;
+    }

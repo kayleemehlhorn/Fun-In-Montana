@@ -1,0 +1,114 @@
+/* CSS styling for Task 2 project */
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(181, 157, 186);
+}
+
+.header {
+    background-color: lightslategray; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/bb/7c/a5/view-overlooking-helena.jpg?w=700&h=500&s=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* NAVBAR */
+nav {
+    background-color: rgb(124, 82, 148);
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* main content style */
+
+.about-helena {
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.victorianhouse {
+    text-align: center;
+}
+
+
+
+/* nav color changers*/
+.navbar a:hover {
+    background-color: goldenrod;
+    color: teal;
+}
+
+/* Aside */
+
+#aside {
+    float: left;
+    width: 25%; 
+    margin-top: 100px; 
+    margin-right: 20px; 
+}
+
+/* footer */
+#footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        width: 100%;
+    }
+
+    /* Table styling */
+    table {
+        float: left;
+        width: 20%;
+        border-collapse: collapse;
+        margin: 20px auto;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 5px;
+        text-align: center;
+        background-color: beige;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }
